@@ -60,15 +60,6 @@
                     android:contentDescription="Rings"
                     app:srcCompat="@drawable/logo" />
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Might remove \nthis page"
-                    android:textAlignment="center"
-                    android:textColor="#FF0000"
-                    android:textSize="60sp" />
-
             </FrameLayout>
 
         </TableRow>
