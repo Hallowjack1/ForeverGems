@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ForeverGems</string>
+    <string name="splash">Splash</string>
+    <string name="loginlogo">loginlogo</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="earring">earring</string>
+    <string name="finish">Finish</string>
+</resources>
