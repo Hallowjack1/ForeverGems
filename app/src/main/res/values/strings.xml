@@ -10,4 +10,11 @@
     <string name="enter_last_name">Enter Last Name</string>
     <string name="earring">earring</string>
     <string name="finish">Finish</string>
+    <string name="csv">CSV</string>
+    <string name="bracelets">Bracelets</string>
+    <string name="necklaces">Necklaces</string>
+    <string name="rings">Rings</string>
+    <string name="earrings">Earrings</string>
+    <string name="choose_jewelry_type_and_material">Choose Jewelry Type and Material</string>
+    <string name="Result">Result....</string>
 </resources>

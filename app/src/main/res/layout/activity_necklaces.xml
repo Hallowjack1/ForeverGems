@@ -35,7 +35,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnFinish"
         android:layout_width="140dp"
         android:layout_height="58dp"
         android:layout_marginBottom="24dp"

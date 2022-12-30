@@ -5,7 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 public class Home extends AppCompatActivity {
 
@@ -14,39 +18,43 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        ImageView imgOne = findViewById(R.id.imgEarring);
-        imgOne.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent i = new Intent(Home.this, Earrings.class);
-                startActivity(i);
-            }
-        });
+        //ListView listView = findViewById(R.id.listView);
 
-        ImageView imgTwo = findViewById(R.id.imgRing);
-        imgTwo.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent i = new Intent(Home.this, Rings.class);
-                startActivity(i);
-            }
-        });
+        final ArrayList<NumbersView> arrayList = new ArrayList<NumbersView>();
 
-        ImageView imgThree = findViewById(R.id.imgNecklace);
-        imgThree.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent i = new Intent(Home.this, Necklaces.class);
-                startActivity(i);
-            }
-        });
+        arrayList.add(new NumbersView(R.drawable.ring,  "Rings"));
+        arrayList.add(new NumbersView(R.drawable.necklace, "Necklaces"));
+        arrayList.add(new NumbersView(R.drawable.bracelet, "Bracelets"));
+        arrayList.add(new NumbersView(R.drawable.earring, "Earrings"));
 
-        ImageView imgFour = findViewById(R.id.imgBracelet);
-        imgFour.setOnClickListener(new View.OnClickListener(){
+        NumbersViewAdapter numbersArrayAdapter = new NumbersViewAdapter(this, arrayList);
+
+        ListView numbersListView = findViewById(R.id.listView);
+
+        numbersListView.setAdapter(numbersArrayAdapter);
+
+        //ArrayAdapter arrayAdapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_1, arrayList);
+        numbersListView.setAdapter(numbersArrayAdapter);
+
+        numbersListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
-            public void onClick(View view){
-                Intent i = new Intent(Home.this, Bracelets.class);
-                startActivity(i);
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                if(position == 0){
+                    Intent i = new Intent(Home.this, Rings.class);
+                    startActivity(i);
+                }
+                else if (position == 1){
+                    Intent i = new Intent(Home.this, Necklaces.class);
+                    startActivity(i);
+                }
+                else if (position == 2){
+                    Intent i = new Intent(Home.this, Bracelets.class);
+                    startActivity(i);
+                }
+                else {
+                    Intent i = new Intent(Home.this, Earrings.class);
+                    startActivity(i);
+                }
             }
         });
     }

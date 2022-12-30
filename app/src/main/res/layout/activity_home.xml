@@ -7,163 +7,26 @@
     android:background="#455D7A"
     tools:context=".Home">
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="122dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/loginlogo"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="409dp"
+        android:layout_height="575dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="413dp"
-                android:layout_height="159dp"
-                android:layout_marginTop="32dp"
-                android:contentDescription="@string/loginlogo"
-                android:scaleX="2"
-                android:scaleY="2"
-                app:srcCompat="@drawable/logo" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/imgEarring"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginRight="30dp"
-                    android:clickable="true"
-                    android:contentDescription="Earrings"
-                    app:srcCompat="@drawable/logo" />
-
-                <ImageView
-                    android:id="@+id/imgRing"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginStart="230dp"
-                    android:layout_marginTop="30dp"
-                    android:clickable="true"
-                    android:contentDescription="Rings"
-                    app:srcCompat="@drawable/logo" />
-
-            </FrameLayout>
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/tvEarring"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginTop="10dp"
-                    android:background="#FFFFFF"
-                    android:text="Earrings"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="30sp" />
-
-                <TextView
-                    android:id="@+id/tvRing"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="230dp"
-                    android:layout_marginTop="10dp"
-                    android:background="#FFFFFF"
-                    android:text="Rings"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="30sp" />
-            </FrameLayout>
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/imgNecklace"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginRight="30dp"
-                    android:clickable="true"
-                    android:contentDescription="Necklaces"
-                    app:srcCompat="@drawable/logo" />
-
-                <ImageView
-                    android:id="@+id/imgBracelet"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginStart="230dp"
-                    android:layout_marginTop="30dp"
-                    android:clickable="true"
-                    android:contentDescription="Bracelets"
-                    app:srcCompat="@drawable/logo" />
-
-            </FrameLayout>
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/tvNecklace"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginTop="10dp"
-                    android:background="#FFFFFF"
-                    android:text="Necklaces"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="30sp" />
-
-                <TextView
-                    android:id="@+id/tvBracelet"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="230dp"
-                    android:layout_marginTop="10dp"
-                    android:background="#FFFFFF"
-                    android:text="Bracelets"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="30sp" />
-            </FrameLayout>
-        </TableRow>
-    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

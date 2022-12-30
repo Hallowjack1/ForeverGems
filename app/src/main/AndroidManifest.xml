@@ -13,6 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ForeverGems"
         tools:targetApi="31">
+
+        <activity
+             android:name=".ResultPage"
+             android:exported="false" />
         <activity
             android:name=".Bracelets"
             android:exported="false"
