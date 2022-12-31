@@ -17,4 +17,12 @@
     <string name="earrings">Earrings</string>
     <string name="choose_jewelry_type_and_material">Choose Jewelry Type and Material</string>
     <string name="Result">Result....</string>
+    <string name="ring_material">Ring \nMaterial:</string>
+    <string name="enter_price">Enter Price</string>
+    <string name="price">Material \nPrice = ₱</string>
+    <string name="gemstone_shape">Gemstone \nShape:</string>
+    <string name="gemstone_nprice">Gemstone \nPrice = ₱</string>
+    <string name="bracelet_nmaterial">Bracelet \nMaterial:</string>
+    <string name="earring_nmaterial">Earring \nMaterial:</string>
+    <string name="necklace_nmaterial">Necklace \nMaterial:</string>
 </resources>

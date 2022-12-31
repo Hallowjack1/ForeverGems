@@ -7,8 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 
 public class Home extends AppCompatActivity {
@@ -18,7 +24,14 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        //ListView listView = findViewById(R.id.listView);
+        ImageView imgOne = findViewById(R.id.logo);
+        imgOne.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent i = new Intent(Home.this, CSV.class);
+                startActivity(i);
+            }
+        });
 
         final ArrayList<NumbersView> arrayList = new ArrayList<NumbersView>();
 
@@ -33,7 +46,6 @@ public class Home extends AppCompatActivity {
 
         numbersListView.setAdapter(numbersArrayAdapter);
 
-        //ArrayAdapter arrayAdapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_1, arrayList);
         numbersListView.setAdapter(numbersArrayAdapter);
 
         numbersListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){

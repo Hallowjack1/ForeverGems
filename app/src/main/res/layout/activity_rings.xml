@@ -9,36 +9,23 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="413dp"
-        android:layout_height="159dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="122dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="@string/loginlogo"
         android:scaleX="2"
         android:scaleY="2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo"
-        tools:ignore="ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/ring"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/earring"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
-        tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/logo" />
 
     <Button
         android:id="@+id/btnFinish"
         android:layout_width="140dp"
         android:layout_height="58dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#35EF5E"
         android:text="@string/finish"
         android:textColor="#000000"
@@ -47,4 +34,143 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/rings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:srcCompat="@drawable/ring" />
+
+    <TextView
+        android:id="@+id/tvMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/ring_material"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerRingMaterial"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Spinner
+        android:id="@+id/spinnerRingMaterial"
+        android:layout_width="255dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvMaterialDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/price"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMaterial" />
+
+    <EditText
+        android:id="@+id/etMaterialPrice"
+        android:layout_width="231dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#F8F8F8"
+        android:ems="10"
+        android:hint="@string/enter_price"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFF3F3"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toEndOf="@+id/tvMaterialDesc"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRingMaterial"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Spinner
+        android:id="@+id/spinnerGemShape"
+        android:layout_width="262dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toEndOf="@+id/tvGemShape"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvGemShape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/gemstone_shape"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/etGemShapePrice"
+        android:layout_width="231dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#F8F8F8"
+        android:ems="10"
+        android:hint="@string/enter_price"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFF3F3"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintStart_toEndOf="@+id/tvGemShapeDesc"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerGemShape" />
+
+    <TextView
+        android:id="@+id/tvGemShapeDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/gemstone_nprice"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGemShape" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="20dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMaterialPrice" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

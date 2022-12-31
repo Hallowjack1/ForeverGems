@@ -5,23 +5,33 @@
       <map>
         <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
         <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/drawable/ic_splash.xml" value="0.1" />
-        <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/activity_bracelets.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/activity_bracelets.xml" value="0.264" />
         <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/activity_custom_gems.xml" value="0.22735507246376813" />
         <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/activity_custom_material.xml" value="0.264" />
         <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/activity_earrings.xml" value="0.264" />
         <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/activity_necklaces.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/activity_necklaces.xml" value="0.264" />
         <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/activity_register.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/activity_result_page.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/activity_result_page2.xml" value="0.22735507246376813" />
-        <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/activity_rings.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/activity_rings.xml" value="0.264" />
         <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/activity_splash.xml" value="0.264" />
         <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/activity_test.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/csv_layout.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/custom_bracelet_spinner_adapter.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/custom_earring_spinner_adapter.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/custom_gem_spinner_adapter.xml" value="0.22735507246376813" />
         <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/custom_layout.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/custom_list_view.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/custom_necklace_spinner_adapter.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/custom_ring_list_view.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/custom_ring_spinner_adapter.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/custom_spinner_adapter.xml" value="0.22735507246376813" />
         <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/list_view_layout.xml" value="0.4" />
+        <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/my_dropdown_item.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/my_selected_item.xml" value="0.22735507246376813" />
         <entry key="..\:/Users/Matthew/Documents/College/3rd Year College/ITC104/Jewelry CLE/app/src/main/res/layout/secondary_layout.xml" value="0.22826086956521738" />
       </map>
     </option>

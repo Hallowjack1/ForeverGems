@@ -15,40 +15,13 @@ public class ResultPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result_page);
 
-        Button btnType, btnNext;
-        TextView txt_result;
+        TextView result;
 
-        /*btnType = findViewById(R.id.btnType);
-        btnType.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ResultPage.this, CustomMaterial.class);
-                startActivity(intent);
-            }
-        });
+        Bundle extras = getIntent().getExtras();
 
-        btnNext = findViewById(R.id.btnNext);
-        btnNext.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ResultPage.this, CustomGems.class);
-                startActivity(intent);
-            }
-        });*/
-        txt_result = findViewById(R.id.txt_result);
-        txt_result.setText(getIntent().getExtras().getString("message_key"));
-       /* Bundle extras = getIntent().getExtras();
-        String result = extras.getString("result");
-        setContentView(R.layout.activity_result_page);*/
+        String results = extras.getString("finalResult");
 
-
-
-
-
-        /*Intent intent = getIntent();
-        String name = this.getIntent().getStringExtra("message_key");
-        //String str = intent.getStringExtra("message_key");
-
-        txt_result.setText(name);*/
+        result = findViewById(R.id.results);
+        result.setText(results);
     }
 }
