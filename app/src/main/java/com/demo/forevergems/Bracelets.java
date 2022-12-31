@@ -11,7 +11,6 @@ import android.widget.SpinnerAdapter;
 
 public class Bracelets extends AppCompatActivity {
 
-    private Spinner spinnerBracelet, spinnerGem;
     EditText etMaterialPrice, etGemPrice;
     String strMaterialPrice, strGemPrice, resultMessage;
     Button btnFinish;
@@ -58,13 +57,13 @@ public class Bracelets extends AppCompatActivity {
         });
 
         BraceletMaterial.initBraceletMaterial();
-        spinnerBracelet = (Spinner) findViewById(R.id.spinnerBraceletMaterial);
+        Spinner spinnerBracelet = (Spinner) findViewById(R.id.spinnerBraceletMaterial);
 
         SpinnerAdapter customAdapter = new BraceletSpinnerAdapter(this, R.layout.custom_ring_spinner_adapter, BraceletMaterial.getBraceletMaterialArrayList());
         spinnerBracelet.setAdapter(customAdapter);
 
         GemShape.initGemShape();
-        spinnerGem = (Spinner) findViewById(R.id.spinnerGemShape);
+        Spinner spinnerGem = (Spinner) findViewById(R.id.spinnerGemShape);
 
         customAdapter = (SpinnerAdapter) new GemSpinnerAdapter(this, R.layout.custom_gem_spinner_adapter, GemShape.getGemShapeArrayList());
         spinnerGem.setAdapter(customAdapter);
