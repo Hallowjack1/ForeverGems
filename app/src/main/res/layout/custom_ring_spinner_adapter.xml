@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#E3E3E3">
 
     <ImageView
+        android:id="@+id/imageIconRing"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/ring_silver"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="5dp"
         android:layout_gravity="center"
-        android:id="@+id/imageIconRing"/>
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ring_silver" />
 
     <TextView
+        android:id="@+id/nameTextViewRing"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:text="@string/cal"
-        android:layout_marginStart="20dp"
-        android:textColor="@color/black"
-        android:textSize="20sp"
         android:layout_gravity="center_vertical"
-        android:id="@+id/nameTextViewRing"/>
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/cal"
+        android:textColor="#455D7A"
+        android:textSize="20sp" />
 </LinearLayout>
