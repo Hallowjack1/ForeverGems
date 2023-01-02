@@ -54,6 +54,10 @@ public class Earrings extends AppCompatActivity {
 
             i.putExtras(args);
             startActivity(i);
+
+            DialogFragmentCustom dialogFragmentImp = new DialogFragmentCustom();
+            dialogFragmentImp.setArguments(args);
+            dialogFragmentImp.show(getSupportFragmentManager(),"Display Result");
             clearEditText();
         });
 

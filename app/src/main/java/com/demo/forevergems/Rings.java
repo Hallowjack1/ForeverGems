@@ -28,7 +28,7 @@ public class Rings extends AppCompatActivity {
 
         btnFinish.setOnClickListener(view -> {
 
-            Intent i = new Intent(getApplicationContext(), ResultPage.class);
+            //Intent i = new Intent(getApplicationContext(), ResultPage.class);
 
             Bundle args = new Bundle();
 
@@ -52,8 +52,12 @@ public class Rings extends AppCompatActivity {
                     "\n\nThe Wholesale Price of the Jewelry is: ₱" + (int) wholesalePrice;
             args.putString("finalResult", resultMessage);
 
-            i.putExtras(args);
-            startActivity(i);
+            //i.putExtras(args);
+            //startActivity(i);
+
+            DialogFragmentCustom dialogFragmentImp = new DialogFragmentCustom();
+            dialogFragmentImp.setArguments(args);
+            dialogFragmentImp.show(getSupportFragmentManager(),"Display Result");
             clearEditText();
         });
 
@@ -72,7 +76,7 @@ public class Rings extends AppCompatActivity {
 
         }
     public void clearEditText() {
-        etGemPrice.getText().clear();
-        etMaterialPrice.getText().clear();
+        //etGemPrice.getText().clear();
+        //etMaterialPrice.getText().clear();
     }
 }

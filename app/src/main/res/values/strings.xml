@@ -26,4 +26,6 @@
     <string name="earring_nmaterial">Earring \nMaterial:</string>
     <string name="necklace_nmaterial">Necklace \nMaterial:</string>
     <string name="cal">Cal</string>
+    <string name="txt_close">Close</string>
+    <string name="txt_result">Jewelry Price</string>
 </resources>
